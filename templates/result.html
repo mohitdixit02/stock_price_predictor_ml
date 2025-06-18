@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+
+<body>
+    <div class="main_body">
+        <!-- Portfolio Analysis -->
+        <h1>Portfolio Analysis</h1>
+        <div class="portfolio_main">
+            <div class="portoflio_left">
+                <div class="portfolio_name_holder">Portfolio</div>
+                <div class="portfolio_data_holder_left">
+                    <ul type="none">
+                        <li>Total Invested Amount: </li>
+                        <li>Predicted Total Next Day Amount: </li>
+                    </ul>
+                    <ul type="none" class="data_predicted_portoflio_ul">
+                        <div>...</div>
+                        <div>...</div>
+                    </ul>
+                </div>
+            </div>
+            <div class="portfolio_right">
+                <div class="profit_loss_type">....</div>
+                <div>....</div>
+            </div>
+        </div>
+
+        <!-- Portfolio Individual -->
+        <div class="portfolio_individual_holder"></div>
+
+        <!-- Model Individual Prediction -->
+        <div class="model_prediction_main_holder">
+            <h2>Model Prediction Analysis</h2>
+            <div class="model_prediction_main">
+                <div class="loader_prediction">
+                    <div class="loader_text">Calculating</div>
+                    <div class="spinner-border text-light" role="status"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Day Stock Price Predictor</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}"></link>
+    </link>
+</head>
+
+<body>
+    <h1>Next Day Stock Price Predictor</h2>
+        <p>
+            This project enables you to predict the next day's closing prices of multiple companies and calculate the net profit or loss based on your investments. It utilizes a Linear Regression model trained on historical stock price data, taking inputs such as open, close, and high prices along with the corresponding dates.
+        </p>
+        <div class="main_top_holder">
+            <div class="left_holder">
+                <select id="available_categories_select">
+                    <option value="--">- Select Category -</option>
+                </select>
+                <select id="available_companies_select">
+                    <option value="--">- Select Category first -</option>
+                </select>
+                <input type="text" name="open_price" placeholder="Open Price">
+                <input type="text" name="close_price" placeholder="Close Price">
+                <input type="text" name="high_price" placeholder="High Price">
+                <input type="text" name="number_of_stocks" placeholder="Number of Stocks">
+                <input type="date" name="date" placeholder="Date">
+                <button id="predict-btn">Add company Stock Info</button>
+            </div>
+
+            <div class="right_holder">
+                <div>
+                    <table id="added-companies-table" border="1" cellpadding="5">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Company</th>
+                                <th>Low Price</th>
+                                <th>High Price</th>
+                                <th>Close Price</th>
+                                <th>Number of Stocks</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <button id="predict-next-day-btn">Predict Next Day Price</button>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

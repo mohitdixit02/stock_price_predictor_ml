@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(145deg, #000000, #1c1c2b);
+    color: white;
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Portfolio Main */
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: #44447a;
+}
+
+.portfolio_main {
+    background-color: #33343caa;
+    display: flex;
+    margin: 8px;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.portoflio_left {
+    width: 50%;
+    font-size: 18px;
+}
+
+.portfolio_name_holder {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.portfolio_data_holder_left {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.portfolio_data_holder_left>ul {
+    types: none;
+    width: 50%;
+}
+
+.portfolio_right {
+    font-weight: bold;
+    text-align: right;
+    font-size: 28px;
+}
+
+.profit_theme {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: rgb(143, 228, 145);
+}
+.loss_theme {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: red;
+}
+
+/* Portfolio Individual */
+.portfolio_individual_holder{
+    margin-top: 30px;
+}
+
+.company_individual_data_holder_left {
+    margin-top: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.portfolio_individual {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+    padding: 10px 20px;
+    background-color: #33343caa;
+}
+
+.company_name_holder{
+    color: #565664;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.company_name_holder div{
+    color: white;
+    font-size: 20px;
+}
+
+.portfolio_individual_right{
+    text-align: right;
+    font-size: 28px;
+}
+
+/* Model Analysis */
+.model_prediction_main_holder{
+    margin-top: 20px;
+}
+.model_prediction_main_holder h2{
+    padding: 10px;
+    text-align: center;
+}
+.model_prediction_main{
+    margin: 8px;
+    padding: 10px 20px;
+    background-color: #33343caa;
+}
+.model_prediction_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.model_predition_text_holder{
+    color: #565664;
+    font-size: 12px;
+}
+.model_predition_text_holder div{
+    color: white;
+    font-size: 20px;
+}
+.model_prediction_plot{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.model_prediction_plot div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+/* loader */
+.loader_prediction{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.loader_text{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+}

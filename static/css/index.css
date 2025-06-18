@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(145deg, #000000, #1c1c2b);
+    color: white;
+}
+h1{
+    text-align: center;
+    padding: 15px 0;
+    color: #44447a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main_top_holder{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+}
+.left_holder{
+    border-radius: 5px;
+    padding: 30px 20px;
+    background-color: #33343caa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 40%;
+}
+.left_holder input{
+    background-color: #33343caa;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+.left_holder select{
+    background-color: #33343caa;
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+.left_holder button{
+    background-color: #44447a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.left_holder button:hover{
+    background-color: #5a5a8c;
+}
+.left_holder input[type="date"]{
+    background-color: #33343caa;
+    color: white;
+}
+.right_holder{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    width: 54%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #33343caa;
+}
+
+.right_holder div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right_holder button{
+    background-color: #44447a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.right_holder table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.right_holder table th, .right_holder table td{
+    border: 1px solid #44447a;
+    padding: 8px;
+    text-align: center;
+}
+
+.right_holder table th{
+    background-color: #44447a;
+    color: white;
+}
