@@ -17,11 +17,11 @@
 git clone git@github.com:mohitdixit02/stock_price_predictor_ml.git
 ```
 
-2. Setup a python (>=3.13) virtual environment (Snippet for Windows)
+2. Setup a python (>=3.13) virtual environment (example for Windows)
 
 ```bash
 cd stock_price_predictor_ml
-python -m venv venv
+python -m venv .venv
 ```
 
 3. Activate the environment and install the dependencies
